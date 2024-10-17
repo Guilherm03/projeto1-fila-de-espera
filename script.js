@@ -1,4 +1,4 @@
-const pacientes = [];
+const patient = [];
 
 let options;
 
@@ -12,22 +12,21 @@ do {
 
     switch (options) {
         case '1':
-            const nome = prompt("Digite o nome do paciente:");
-            if (nome) {
-                pacientes.push(nome);
-                console.log(`${nome} foi adicionado à fila.`);
+            const name = prompt("Digite o nome do paciente:");
+            if (name) {
+                pacientes.push(name);
+                console.log(`${name} foi adicionado à fila.`);
             } else {
                 console.log("Nome inválido. Tente novamente.");
             }
             break;
 
         case '2':
-            if (pacientes.length === 0) {
+            if (patient.length === 0) {
                 console.log("Não há pacientes na fila.");
             } else {
-                console.log("Pacientes na fila:");
-                pacientes.forEach((paciente, index) => {
-                    console.log(`${index + 1}º ${paciente}`);
+                console.log("Pacientes na fila:");{
+                    console.log(`${index + 1}º ${patient}`);
                 });
             }
             break;
